@@ -100,6 +100,8 @@ console.log("Relatório atualizado(Final)");
 const relatorioFinal = await db.all(`SELECT * FROM incidentes`);
 console.table(relatorioFinal);
 
+
+return db;
   };
 
-criarBanco();
+module.exports = { criarBanco};
